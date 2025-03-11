@@ -1,0 +1,137 @@
+/* Fullscreen gradient background */
+.fomm_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #fbad6e, #e37777);
+    font-family: "Poppins", sans-serif;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Form container */
+.name_form {
+    background: #222e3a;
+    backdrop-filter: blur(12px);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.9);
+    text-align: center;
+    animation: fadeIn 0.8sease-in-out;
+    width: 90%;
+    max-width: 350px;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Input fields */
+input {
+    width: 100%;
+    padding: 12px 0px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Input focus effect */
+input:focus {
+    outline: none;
+    transform: scale(1.03);
+    border: 2px solid #ff0505;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Button styles */
+button {
+    background: #f16c07;
+    color: white;
+    font-size: 18px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    font-weight: bold;
+}
+
+/* Button hover effect */
+button:hover {
+    background: #ffe75c;
+    transform: translateY(-2px);
+    box-shadow: 0px 5px 12px rgba(255, 255, 255, 0.3);
+}
+
+/* Button disabled state */
+button:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+/* Full name display */
+p {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #fff;
+    animation: slideIn 0.6s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+    .name_form {
+        padding: 30px;
+    }
+
+    input {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
