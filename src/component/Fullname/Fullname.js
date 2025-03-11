@@ -25,7 +25,7 @@ function Fullname() {
   };
   return (
     <div className="fomm_div" onSubmit={handleSubmit}>
-      <h1>Display Full Name</h1>
+      <h1>Full Name Display</h1>
       <form className="name_form">
         <label>First Name: </label>
         <input
